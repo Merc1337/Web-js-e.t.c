@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+let user = {
+name: "Джон",
+age: 30,
+city: "New York",
+organization: "Google",
+id: 1337
+};
+
+let restaraunt = {
+    name: "Nobu Downtown",
+    adress: "Fulton st, 195",
+    phone: "+1 212 219 0500"
+}
+
+let order = {
+    product1: "Fish'n'Chips",
+    product2: "Soda",
+    delivery_time: 1830
+
+}
+
+
+order.about = function() {
+    if (user.name == "Джон"){
+        alert("This will be delivered:")
+        alert(this.product1 + ',' + this.product2)
+    }
+    else{
+        alert("invalid name")
+    }
+}
+order.about();
+</script>

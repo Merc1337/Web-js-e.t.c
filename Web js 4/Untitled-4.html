@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+function User(name, floor) {
+
+this.name = name;
+this.floor = floor;
+this.sayHi = function() {
+alert( "Меня зовут: " + this.name );
+
+};
+this.myFloor = function() {
+
+alert( "Мой этаж: " + this.floor);
+    };
+}
+let Dani = new User("Данила", 16);
+Dani.sayHi(); 
+Dani.myFloor();
+</script>
