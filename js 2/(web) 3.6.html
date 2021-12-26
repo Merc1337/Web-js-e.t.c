@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script> 
+var k = 22;
+var odd = [];
+var final = [0, 1, 2];
+while ((k<=22) & (k !=2) & (k != 1) & (k !=0)) {
+	if (k % 2 == 1) {
+		odd.push(k)
+	}
+	k = k - 1
+}
+for (var i = 0; i < odd.length;i++) {
+	if (odd[i] %3 != 0) {
+	final.push(odd[i])
+	}
+}
+alert(final)
+
+
+
+
+
+</script>
